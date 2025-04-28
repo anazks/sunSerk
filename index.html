@@ -650,6 +650,34 @@
                 font-size: 1.8rem;
             }
         }
+        .sub-companies {
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.company-badges {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.company-badge {
+    padding: 8px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.company-badge:hover, .company-badge.active {
+    background: var(--secondary);
+    transform: translateY(-3px);
+}
     </style>
 </head>
 <body>
@@ -665,6 +693,8 @@
                     <li class="nav-item"><a href="#why-us" class="nav-link">Why Us</a></li>
                     <li class="nav-item"><a href="#market" class="nav-link">Market Analysis</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Novax</a></li>
+
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -681,6 +711,13 @@
             <div class="hero-content">
                 <h1>Integrated Global Business Services & Supply Chain Solutions</h1>
                 <p>Empowering organizations with seamless global business services specializing in multi-dimensional functions leveraging innovative technologies and deep market insights to optimize operations and foster growth.</p>
+                <div class="sub-companies">
+                    <p><strong>Our Family of Companies:</strong></p>
+                    <div class="company-badges">
+                        <a href="#sunserk" class="company-badge active">Sunserk</a>
+                        <a href="https://novaxkinetics.netlify.app/" class="company-badge" target="_blank">Novax Kinetis</a>
+                    </div>
+                </div>
                 <a href="#contact" class="btn">Get Started</a>
             </div>
         </div>
